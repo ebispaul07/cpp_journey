@@ -1,3 +1,5 @@
+//Armstrong Number
+
 #include<iostream>
 #include<string>
 
