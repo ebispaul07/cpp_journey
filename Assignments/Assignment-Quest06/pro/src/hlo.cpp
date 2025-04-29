@@ -242,6 +242,7 @@ int fun(int a, int b) {
 
 //Angle from traingle
 
+/*
 #include<iostream>
 using namespace std;
 
@@ -264,3 +265,4 @@ int main() {
 		cout << "Not a triangle";
 	}
 }
+*/

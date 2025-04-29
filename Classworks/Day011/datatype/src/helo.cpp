@@ -179,6 +179,7 @@ int main() {
 
 //Call By Value
 
+/*
 #include<iostream>
 using namespace std;
 
@@ -192,4 +193,14 @@ int main() {
 
 	add(num,num);
 	cout << num;
+}
+*/
+
+//Call by pointer
+
+#include<iostream>
+using namespace std;
+
+int main() {
+
 }
