@@ -98,20 +98,174 @@ int main() {
 
 */
 
-//
+//King's Perfect Army
+
+/*
 #include<iostream>
 using namespace std;
 
 int main() {
 
-	int num,digit;
+	int num,digit=0;
 	cout << "enter:";
 	cin >> num;
 
 	for (int i = 1;i < num;i++) {
 		if (num % i == 0) {
-			int digi = digit + digit + digit;
-			cout << digi;
+			
+			cout << i;
 		}
 	}
+}
+
+*/
+
+//Spaceship Countdown
+
+/*
+#include<iostream>
+using namespace std;
+
+int main() {
+
+	int num;
+	cout << "Enter:";
+	cin >> num;
+
+	
+
+	while (num>=1) {
+
+		cout << num << endl;
+
+		num--;
+	}
+}
+
+*/
+
+
+//First Non-Zero Digit in Secret Code
+
+
+/*
+#include<iostream>
+using namespace std;
+
+int main() {
+
+	int num;
+	cout << "Enter:";
+	cin >> num;
+
+	for (int i = 0;i <= num;i++) {
+		int digit = num % 10;
+		
+
+		if (digit % 2 == 0) {
+			
+			cout << digit<< endl;
+		}
+		
+		num = num / 10;
+		}
+	}
+
+	*/
+
+//Energy Crystals
+
+/*
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	int num;
+	cout << "Enter:";
+	cin >> num;
+	int n = 2;
+
+
+	while (num > n) {
+
+		n = 2 * n;
+
+		cout << n;
+
+
+
+	}
+	
+}
+	
+*/
+
+//Magic Multiplying Puzzle
+
+/*
+#include<iostream>
+using namespace std;
+
+int main() {
+	bool flag = true;
+
+	int num;
+	cout << "Enter:";
+	cin >> num;
+	int pro=1;
+
+	for (int i = 1;i <= num;i++) {
+		int digit = num % 10;
+		 pro = pro * digit;
+		
+		
+		num = num / 10;
+	}
+	cout << pro << endl;
+
+	for (int i = 2;i < pro;i++) {
+		if (pro % i == 0) {
+			flag = false;
+			break;
+		}
+	}
+
+	if (flag==true) {
+		cout << "prime";
+	}
+	else {
+		cout << "Not Prime";
+	}
+
+	
+}
+
+*/
+
+//The Doubling Machine
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	int num;
+	cout << "Enter:";
+	cin >> num;
+
+	int count = 1,sum=0;
+
+
+	for (int i = 1; count <= num; count++) {
+		i =i* 2;
+	
+		cout << i << endl;
+
+		 sum = sum + i;
+
+
+	}
+
+	cout <<"Total:" << sum;
+
 }
