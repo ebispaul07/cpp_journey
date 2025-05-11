@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{becdc243-373d-4c9d-b813-7f0b4238aa9d}</ProjectGuid>
-    <RootNamespace>Matrixmul</RootNamespace>
+    <ProjectGuid>{b40f3705-e264-4503-9169-ab84200761a1}</ProjectGuid>
+    <RootNamespace>My60programs</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hai.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="sr.cpp" />
+    <ClCompile Include="src\1.positiveOrNegative.cpp" />
+    <ClCompile Include="src\2.greatestOfThree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,10 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hai.cpp">
+    <ClCompile Include="sre\Fibonacci.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sr.cpp">
+    <ClCompile Include="sre\lcm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sre\LandSarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sre\sumofarr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sre\palindromestr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 using namespace std;
 
@@ -34,3 +35,57 @@ int main() {
 	}
 	
 }
+*/
+
+//strchr
+
+
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	char line[] = "This is CPP Programming Class";
+	char ch = 'h';
+
+	unsigned long int BAl, BAr = 0;
+
+	cout << "Base addresss:" << (unsigned long int)line << endl;
+
+	BAr=(unsigned long int)line;
+
+	char* res = strchr(line, ch);
+
+	char substr[] = "is";
+
+	char* res1 = strstr(line, substr);
+
+	
+
+	if (res != nullptr) {
+
+		cout << res1 << endl;
+		cout << "Base addresss:" << (unsigned long int)res<< endl;
+	}
+	else {
+		cout << "Character not found" << endl;
+	}
+
+	unsigned long int r = BAr - BAl;
+	cout << "Position:" << r;
+
+	return 0;
+}
+
+
+
+//strstr
+/*
+#include<iostream>
+using namespace std;
+
+int main() {
+	
+
+}
+*/

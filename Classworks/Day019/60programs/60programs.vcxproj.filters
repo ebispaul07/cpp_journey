@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hai.cpp">
+    <ClCompile Include="src\1.positiveOrNegative.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sr.cpp">
+    <ClCompile Include="src\2.greatestOfThree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
