@@ -63,5 +63,8 @@
     <ClCompile Include="src\prg21.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\prg16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

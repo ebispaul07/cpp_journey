@@ -13,12 +13,14 @@ int main() {
 	int next;
 	int b=1;
 
+	
+
 	for (int i = 0;i <= num;i++) {
-		cout << a<<" ";
+			cout << a << " ";
 		 next = a + b;
 				a = b;
 				b = next;
-
+				
 	}
 
 	
