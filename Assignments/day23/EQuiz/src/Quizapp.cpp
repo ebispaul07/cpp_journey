@@ -48,7 +48,7 @@ void menu(QZ q) {
 		exit();
 		break;
 	default:
-		cout << "\t\t\t\Are You Mad Enter Correct option" << endl;
+		cout << "\t\t\t\Are You Blind Enter Correct option" << endl;
 		cout << endl;
 		cout << endl;
 		menu(q);
