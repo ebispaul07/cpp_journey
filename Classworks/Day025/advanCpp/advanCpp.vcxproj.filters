@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="functionsquare.cpp">
+    <ClCompile Include="Abstraction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
