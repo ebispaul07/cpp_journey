@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\stackInt.cpp" />
+    <ClCompile Include="src\linkedList.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{34888b20-ac0e-4565-99dc-3f706bb130ad}</ProjectGuid>
-    <RootNamespace>ArrayClass</RootNamespace>
+    <ProjectGuid>{91330b1e-8b06-4a2c-808b-4750366db4cb}</ProjectGuid>
+    <RootNamespace>que</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
