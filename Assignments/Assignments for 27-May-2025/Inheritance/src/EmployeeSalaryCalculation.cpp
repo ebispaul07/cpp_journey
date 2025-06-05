@@ -12,6 +12,11 @@ public:
 		this->name = name;
 	}
 
+	void setDetail(int empId,string name) {
+		this->empId = empId;
+		this->name=name;
+	}
+
 	
 };
 
@@ -36,14 +41,14 @@ public:
 
 };
 
-class Techlead :public Developer, public Manager, public Employee {
+class Techlead :public Employee,  public Developer, public Manager {
 protected:
 	int totalCodingSalary;
 	int totalSalary;
 public:
-	Techlead(int empId, string name, int codingHours, int teamSize): Developer(codingHours),Manager(teamSize), Employee(empId, name){
-		this->totalCodingSalary = 0;
-		this->totalSalary = 0;
+	Techlead(int empId, string name, int codingHours, int teamSize): Employee(empId, name),Developer(codingHours),Manager(teamSize){
+		totalCodingSalary = 0;
+	     totalSalary = 0;
 	}
 
 	void calculateSalary() {
@@ -53,8 +58,8 @@ public:
 
 	void display() {
 		cout << "Tech Lead Info:" << endl;
-		cout << "EmpId: " << empId <<endl;
-		cout << "Name: " << name << endl;
+		cout << "EmpId: " << Employee::empId <<endl;
+		cout << "Name: " << Employee::name << endl;
 		cout << endl;
 		cout << "Salary based on coding:" << totalCodingSalary<< endl;
 		cout << "Salary based on coding + team: " << totalSalary << endl;
@@ -62,19 +67,6 @@ public:
 
 };
 
-/*EmpId: 501
-Name: Rajesh
-Coding Hours: 120
-Team Size: 5
-Expected Output:
-
-Tech Lead Info:
-EmpId: 501
-Name: Rajesh
-
-Salary based on coding: ₹60000
-Salary based on coding + team: ₹85000
-Assume ₹500/hour and ₹5000/team member*/
 
 
 
