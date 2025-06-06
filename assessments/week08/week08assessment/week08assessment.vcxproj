@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9546dbc8-5c6f-4c0d-9777-655f65a53e7e}</ProjectGuid>
-    <RootNamespace>set</RootNamespace>
+    <ProjectGuid>{51643f76-dba9-4f01-98d2-b7d5de2416c2}</ProjectGuid>
+    <RootNamespace>week08assessment</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cppJourney\assessments\week08\week08assessment\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,6 +127,18 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Header\arithmetic.h" />
+    <ClCompile Include="src\arithmetic.cpp" />
+    <ClCompile Include="src\microprocessor.cpp" />
+    <ClCompile Include="src\processor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="instructions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\processor.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
