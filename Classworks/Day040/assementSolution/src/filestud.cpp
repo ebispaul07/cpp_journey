@@ -13,7 +13,9 @@ int main() {
 		getline(rfile, line);
 		rfile.close();
 
-		if (line.substr(0,3)=="sub") {
+		//mul 3*8
+
+		if (line.substr(0,3)=="mul") {
 
 			size_t spacpoc = line.find(" ");
 			size_t starpoc = line.find("*");

@@ -19,16 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="e.txt" />
+    <Text Include="a.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\String.cpp" />
+    <ClCompile Include="src\iterator 1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9b4dda8f-f7db-4f2e-9a8a-4942d06020c5}</ProjectGuid>
-    <RootNamespace>assementSolution</RootNamespace>
+    <ProjectGuid>{18d6f891-a111-4cb8-933b-87c6bf0fd5c7}</ProjectGuid>
+    <RootNamespace>Balancemapingconcepts</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

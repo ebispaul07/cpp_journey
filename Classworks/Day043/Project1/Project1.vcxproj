@@ -19,17 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="e.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\String.cpp" />
+    <ClCompile Include="src\fizzBuzz.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9b4dda8f-f7db-4f2e-9a8a-4942d06020c5}</ProjectGuid>
-    <RootNamespace>assementSolution</RootNamespace>
+    <ProjectGuid>{148354b5-719f-49b9-866b-6b7c7239c4ad}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Multithreading</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -18,17 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="e.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\String.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9b4dda8f-f7db-4f2e-9a8a-4942d06020c5}</ProjectGuid>
-    <RootNamespace>assementSolution</RootNamespace>
+    <ProjectGuid>{99479065-f7a2-4326-8bf9-237506fb588f}</ProjectGuid>
+    <RootNamespace>ContainerAdapters</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -132,6 +126,12 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="f.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\balancedParantheses.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

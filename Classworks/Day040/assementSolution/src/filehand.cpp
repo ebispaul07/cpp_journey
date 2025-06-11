@@ -14,7 +14,7 @@ int main() {
 		getline(refile, line);
 		refile.close();
 		
-		if (line.substr(0,3)=="add") {
+		if (line.substr(0,3)=="add"){
 			size_t spacepos = line.find(" ");
 			size_t compos = line.find(",");
 			
