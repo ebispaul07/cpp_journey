@@ -24,14 +24,14 @@ void mul5(int x) {
 void mul3nd5(int x) {
 	cout << "Multiple By 3 And 5: "<<endl;
 	for (int i = 1;i <= x;i++) {
-		if (i%3==0||i % 5 == 0) {
+		if (i%3==0&&i % 5 == 0) {
 			cout << "Fizz Buzz" << endl;
 		}
 	}
 	cout << endl;
 }
 
-void alloth(int x) {
+void allothr(int x) {
 	cout << "All other Values : ";
 	for (int i = 1;i <= x;i++) {
 		if (i % 3 != 0 && i % 5 != 0) {
@@ -53,7 +53,7 @@ int main() {
 	thread t3(mul3nd5, 20);
 	t3.join();
 
-	thread t4(alloth, 20);
+	thread t4(allothr, 20);
 	t4.join();
 
 }
