@@ -1,63 +1,57 @@
 #include<iostream>
-#include<string>
-#include<mutex>
 #include<thread>
-#include<vector>
+#include<mutex>
+#include<chrono>
 
 using namespace std;
 
 
-class User {
-protected:
-	string name;
-	string username;
-	string password;
-public:
-	User(string name,string username,string password) {
-		this->name = name;
-		this->username = username;
-		this->password = password;
-		
+int highestBidAmount = 0;
+string highestBidder = "";
+mutex mtx;
+
+void bidding(string name, int amount) {
+	mtx.lock();
+	if (amount > highestBidAmount) {
+		highestBidAmount = amount;
+		highestBidder = name;
+		cout << name << " is a Highest Bidder in this Aution With $" << amount << endl;
+	}
+	else {
+		cout << name << " is a Lowest Bidder in this Auction with $" << amount << endl;
+	}
+	mtx.unlock();
+}
+
+void bidderdetail(string name, int amount, int delaytime) {
+	this_thread::sleep_for(chrono::seconds(delaytime));
+	bidding(name, amount);
+}
+
+int main() {
+
+	cout << "Auction Starts...SmartPhone!!" << endl;
+	cout << "Minimum Price $100" << endl;
+
+	thread t1(bidderdetail, "Ebi", 120, 2);
+	thread t2(bidderdetail, "Emi", 200, 3);
+	t1.join();
+	t2.join();
+
+	cout << "Auction Ending...." << endl;
+
+	this_thread::sleep_for(chrono::seconds(1));
+	cout << "3" << endl;
+	this_thread::sleep_for(chrono::seconds(1));
+	cout << "2" << endl;
+	this_thread::sleep_for(chrono::seconds(1));
+	cout << "1" << endl;
+
+	if (highestBidder != "") {
+		cout << "The Auction winner is " << highestBidder << " With Amount of $" << highestBidAmount << endl;
+	}
+	else {
+		cout << "invalid Amount" << endl;
 	}
 
-	void setName(string name) {
-		this->name = name;
-	}
-	string getName() {
-		return name;
-	}
-
-	void setUsername(string username) {
-		this->username = username;
-	}
-	string getUsername() {
-		return username;
-	}
-
-	
-
-};
-
-class Buyer:public User{
-protected:
-	string name;
-	int price;
-public:
-	Buyer(string name, int price) :User(name, username, password) {
-		this->name = name;
-		this->price = price;
-	}
-	
-	
-};
-
-class seller :public User {
-protected:
-	string name;
-	int bidAmount;
-public:
-	seller(string name, int bidAmount) :User(name, username, password) {
-		this->name = name;
-		this->bidAmount = bidAmount;
-	}
-};
+}
