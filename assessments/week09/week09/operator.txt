@@ -1,0 +1,8 @@
+Operator Brand: JIO (42502)
+Incoming voice call durations: 1136404
+Outgoing voice call durations: 42504
+Incoming SMS messages: 0
+Outgoing SMS messages:0
+MB downloaded: 1136404 | MB uploaded : 1136404
+
+
